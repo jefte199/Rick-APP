@@ -1,9 +1,15 @@
 import React from "react";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Search from "./components/RickSearch";
 
 function App() {
   return (
     <>
-      <h1>home</h1>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Search />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
