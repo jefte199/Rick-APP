@@ -1,0 +1,48 @@
+/* Super info*/
+.superinfoBg{
+	background: #3CBC8D;
+	color: white;
+}
+
+.superinfo{
+	padding-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.superinfo a {
+	color: white;
+}
+
+.superinfo a, .superinfo p {
+	margin: 0 10px 10px 10px; 
+}
+
+.title {
+  text-align: center;
+  margin: 0px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.search {
+  width: 300px;
+  padding: 5px 10px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.button {
+  padding: 10px 10px;
+  margin: 8px 0;
+  background-color: #3CBC8D;
+  color: white;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
