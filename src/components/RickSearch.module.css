@@ -1,15 +1,23 @@
+body {
+  background-image: url("https://images.hdqwalls.com/download/rick-sanchez-4k-2020-wg-2560x1080.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 .space {
   margin-top: 20px;
 }
 
 .containerText {
+  color: #A3BFE6;
   text-align: center;
 }
 
 /* Super info*/
 .superinfoBg{
-	background: #3CBC8D;
-	color: #eee;
+	background: #A3BFE6;
+	color: #0E4B45;
   border-radius: 4px;
 }
 
@@ -63,8 +71,8 @@
 .button {
   padding: 10px 10px;
   margin: 8px 0;
-  background-color: #3CBC8D;
-  color: #eee;
+  background-color: #A3BEE6;
+  color: #0E4B45;
   box-sizing: border-box;
   border-radius: 4px;
 }
@@ -92,7 +100,37 @@ img {
 }
 
 .link:hover {
-  box-shadow: 0 4px 8px 0 #3DB187;
+  box-shadow: 0 4px 8px 0 #A3BEE6;
   transition: 0.3s;
-  color: #3DB187;
+  color: #0E4B45;
+}
+
+.statusD {
+  padding: 10px 10px;
+  margin: 8px 0;
+  background-color: #d63d2e;
+  color: #eee;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.statusL {
+  padding: 10px 10px;
+  margin: 8px 0;
+  background-color: #55CC44;
+  color: #eee;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #0E4B45;
+  color: white;
+  text-align: center;
 }
