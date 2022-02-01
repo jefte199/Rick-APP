@@ -5,24 +5,26 @@ import style from './Persons.module.css';
 
 export default function Persons() {
   const { id } = useParams();
-//  const baseURL = "https://rickandmortyapi.com/api/character";
+  const baseURL = "https://rickandmortyapi.com/api/character";
   const [resultApi, setResultApi] = React.useState("https://rickandmortyapi.com/api/character/1");
 
   React.useEffect(async () => {
-    await axios.get(`https://rickandmortyapi.com/api/character/${id}`).then((response) => {
-      setResultApi(response.data.results);
+    await axios.get(`${baseURL}/${id}`).then((response) => {
+      setResultApi(response.data);
     });
   }, []);
 
-  console.log(resultApi);
   return (
     <>
       <div className={style.row}>
         <div className={style.leftcolumn}>
           <div className={style.card}>
-            <h2>Name</h2>
-            <h5>Title description, Dec 7, 2017</h5>
-            <p>Some text..</p>
+            <h2>{resultApi.name} ID: {resultApi.id}</h2>
+            <img src={resultApi.image} alt={resultApi.name} />
+            <br />
+            <button className={resultApi.status === 'Alive' ? style.statusL : style.statusD}>{resultApi.status}</button>
+            <h3>Tipo: {"??" || resultApi.type}</h3>
+            <h3>species: {resultApi.species}</h3>
           </div>
         </div>
       </div>

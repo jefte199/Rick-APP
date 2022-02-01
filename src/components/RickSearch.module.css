@@ -106,21 +106,26 @@ img {
 }
 
 .statusD {
-  padding: 10px 10px;
-  margin: 8px 0;
-  background-color: #d63d2e;
-  color: #eee;
-  box-sizing: border-box;
-  border-radius: 4px;
+  border: 2px solid black;
+  background: #f44336;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #f44336;
+  color: white;
 }
 
 .statusL {
-  padding: 10px 10px;
-  margin: 8px 0;
-  background-color: #55CC44;
-  color: #eee;
-  box-sizing: border-box;
-  border-radius: 4px;
+  border: 2px solid black;
+  color: white;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #04AA6D;
+  color: white;
+  ;
 }
 
 

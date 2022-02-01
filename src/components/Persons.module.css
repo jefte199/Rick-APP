@@ -14,7 +14,30 @@
 }
 
 .card {
-  background-color: white;
+  color: #A3BEE6;
   padding: 20px;
   margin-top: 20px;
+}
+
+.statusD {
+  border: 2px solid black;
+  background: #f44336;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #f44336;
+  color: white;
+}
+
+.statusL {
+  border: 2px solid black;
+  color: white;
+  background-color: #04AA6D;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-color: #04AA6D;
+  color: white;
+  ;
 }
