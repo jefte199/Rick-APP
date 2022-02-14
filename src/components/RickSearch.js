@@ -12,10 +12,14 @@ export default function RickSearch() {
 
   async function api() {
     setLoad(true);
-    await axios.get(`${baseURL}/?name=${valueInput}`).then((response) => {
-      setResultApi(response.data.results);
-    });
-    setLoad(false);
+    try {
+      await axios.get(`${baseURL}/?name=${valueInput}`).then((response) => {
+        setResultApi(response.data.results);
+      });
+      setLoad(false);
+    } catch (error) {
+      setLoad(true);
+    }
   }
 
   return (
